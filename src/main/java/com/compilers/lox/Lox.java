@@ -37,7 +37,7 @@ public class Lox {
         InputStreamReader input = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(input);
 
-        for (;;){
+        while (true){
             System.out.println(".> ");
             String line = reader.readLine();
             if (line == null) break;
@@ -51,7 +51,11 @@ public class Lox {
         List<Token> tokens = scanner.scanTokens();
 
         for (Token token : tokens){
-            System.out.println(token);
+            System.out.println("Lexeme of token is " + token.lexeme);
+            System.out.println("Literal is " + token.literal);
+            System.out.println("Line is " + token.line);
+            System.out.println("The type of lexeme is " + token.type);
+            System.out.println();
         }
     }
 
