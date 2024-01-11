@@ -1,1 +1,1 @@
-Compiler writtn by following the book of `Crafting Interpreters`.
+Creating a programming language to be implemented as an interpreter.
