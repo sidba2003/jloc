@@ -19,6 +19,7 @@ public class Scanner {
     private int line = 1;
     private static final Map<String, TokenType> keywords;
 
+    // creating a HashMap to identify the keywords
     static{
         keywords = new HashMap<>();
         keywords.put("and",    AND);
