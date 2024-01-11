@@ -139,6 +139,7 @@ public class Scanner {
             Lox.error(line, "End of string reached without hitting closing quotes!");
             return;
         }
+        advance();
 
         addToken(STRING, source.substring(start + 1, current - 1));
     }
